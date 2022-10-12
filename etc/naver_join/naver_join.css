@@ -2,7 +2,7 @@
             background-color: rgb(245,246,247);
         }
         .container{
-            width:500px;
+            width: 500px;
             margin: 50px auto ; 
         }
         .header{
@@ -11,32 +11,35 @@
             color: rgb(3,199,90);
         }
         .day{
-            width:31.5%
+            width: 30%;
+            padding-right: 7px;
+
         }
         button{
-            border:0;
-            outline:0;
+            border: 0;
+            outline: 0;
         }
         label{
             font-weight: bold;
         }
         input{            
-            width:500px;
-            height:40px;
-            font-size:15px;
-            margin-top:10px;
+            width: 500px;
+            height: 40px;
+            font-size: 15px;
+            margin-top: 10px;
             margin-bottom: 20px;
             box-shadow: none;
             border-style: solid;
             border-color: rgb(218,218,218);
             background-color: rgb(256,256,256);
             border-width: 1px;
+            padding-left: 5px;
         }
         select{
-            width:500px;
-            height:45px;
-            font-size:15px;
-            margin-top:10px;
+            width: 500px;
+            height: 45px;
+            font-size: 15px;
+            margin-top:1 0px;
             margin-bottom: 20px;
             border-color: rgb(218,218,218);
             background-color: rgb(256,256,256);
@@ -45,8 +48,8 @@
         button{
             color: white;
             background-color: rgb(3,199,90);
-            width:110px;
-            height:50px;
+            width: 110px;
+            height: 50px;
         }
         input#id::placeholder{
             text-align: right;
@@ -62,15 +65,18 @@
         }
         span{
             font-size: 12px;
-            opacity:0.5;
+            opacity: 0.5;
         }
         .container footer{
             font-size: 14px;
             text-align: center;
+            margin-top: 20px;
+            opacity: 0.4;
         }
         input:focus{
             border-color:rgb(3,199,90);
-            outline:none;
+            outline: none;
+            
         }
         select:focus{
             border-color:rgb(3,199,90);
