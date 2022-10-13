@@ -27,7 +27,7 @@
             width: 100px;
             height: 50px;
             margin-left: 5px;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: bolder; 
             /* padding: 5px; */
             border: 0 ;
@@ -39,7 +39,7 @@
             padding-left: 7px;
         }
         .tel > input:nth-of-type(1){
-           width: 464px;
+            width: 464px;
         }
         a{
             text-decoration: none;
@@ -73,6 +73,8 @@
             background-color: rgb(256,256,256);
             border-width: 1px;
             padding: 0 10px;
+            padding-right: 10px;
+
         }
         .passwd input[id=pw]{
             background-image: url(./image/lock.png);
@@ -115,6 +117,7 @@
             border-color:rgb(3,199,90);
             outline:none;
         }
+
         #phone{
             margin-bottom: 0.05em;
         }
