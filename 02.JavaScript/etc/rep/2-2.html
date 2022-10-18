@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>rep 2-2</title>
+</head>
+<body>
+    <script>
+        const height = parseInt(prompt("키를 입력하세요 : "));
+        if (height >= 150){
+            alert("놀이기구 이용 가능합니다!");
+        }
+        else if (height < 150){
+            var conf = confirm("부모님과 함께 왔니?");
+            if (conf){
+                alert("좋은 시간 보내렴~");
+            }
+            else{
+                alert("어른 모시고 다시 오렴~");
+            }
+        }
+        else{
+            alert("정수를 입력하세요!");
+        }
+    </script>
+</body>
+</html>

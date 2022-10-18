@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const n1 = parseInt(prompt("첫번째 정수를 입력하세요 : "));
+        const n2 = parseInt(prompt("두번째 정수를 입력하세요 : "));
+        const n3 = parseInt(prompt("세번째 정수를 입력하세요 : "));
+
+        var sum = n1+n2+n3 ;
+        var avg = sum/3;
+        var max = 0;
+        var min = 0;
+
+        if(n1>n2 && n1>n3){
+            if(n2>n3){
+                max = n1;
+                min = n3;
+            }
+            else if(n2==n3){
+                max = n1;
+                min = n2;
+            }
+            else{
+                max = n1;
+                min = n2;
+            } 
+        }
+        else if(n2>n1 && n2>n3){
+            max = n2;
+            if(n1>n3){
+                min = n3;
+            }
+            else if(n1==n3){
+                min = n1;
+            }
+            else{
+                min = n1;
+            }
+        }    
+        else if(n3>n1 && n3>n2){
+            max = n3;
+            if(n2>n1){
+                min = n1;
+            }
+            else if(n2==n1){
+                min = n1;
+            }
+            else{
+                min = n2;
+            }
+        }
+        else{
+            max = n2;
+            min = n1;
+        }  
+        
+
+        
+        alert(`최대값은 ${max} 최솟값은 ${min} 합계는 ${sum} 평균은 ${avg}입니다.`)
+</script>
+</body>
+</html>

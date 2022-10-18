@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>rep 1-1</title>
+</head>
+<body>
+    <script>
+        const grade = parseInt(prompt("학년을 입력하세요 : "));
+        const score = parseInt(prompt("점수를 입력하세요 : "));
+        
+        if(grade==4){
+            if(score>=70 && score<100){
+                alert("합격");
+            }
+            else if(score<70 && score>0){
+                alert("불합격");
+            }
+            else{
+                alert("에러입니다.");
+            }
+        }
+        else if((grade>=1 && grade<4) || (grade>=5 && grade<7)){
+            if(score>=60 && score<100){
+                alert("합격");
+            }
+            else if(score<60 && score>0){
+                alert("불합격");
+            }
+            else{
+                alert("에러입니다.");
+            }
+        }
+        else{
+            alert("불합격");
+        }
+    </script>
+</body>
+</html>
