@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script>
+      const max = function (array) {
+        let m = array[0]
+        for(const i of array){
+          if(m < i){
+            m = i
+          }
+        }
+        return m
+      }
+      console.log(max([1, 2, 3, 4]));
+    </script>
+  </head>
+  <body></body>
+</html>

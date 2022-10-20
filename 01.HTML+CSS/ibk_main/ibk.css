@@ -150,6 +150,8 @@ header{
 }
 .new{
     width: 50%;
+    border: 1px solid;
+
 }
 .public{
     width: 50%;
@@ -167,16 +169,25 @@ header{
     font-size: 0.8rem;
 
 }
-
+@media all and (max-width:1000px){
+    .wrap{
+        width: 95vw;
+    }
+}
 /*footer*/
 footer{
     display: flex;
     height: 100px;
-    background-color: aquamarine;
 }
 .footer__left{
     width: 60%;
 }
+.footer__left__list{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
 .footer__right{
     width: 40%;
 }
+
