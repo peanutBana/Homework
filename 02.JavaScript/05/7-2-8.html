@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"> cm = 
+    <span></span>
+    <select>
+        <option value="10">mm</option>
+        <option value="0.01">m</option>
+        <option value="0.393701">inch</option>
+    </select>
+    <script>
+        let currentVal;
+        let transVal = 10;
+
+        const select = document.querySelector('select')
+        const input = document.querySelector('input')
+        const span = document.querySelector('span')
+
+        function calculate(){
+            //계산 결과를 보여준다.
+            //toFiexd(2)소수점 두자리까지만 출력
+            span.textContent = (currentVal * transVal).toFixed(2)
+        }
+
+        select.addEventListener('change', (e) => {
+            const options = e.currentTarget.options
+            const index = e.currentTarget.options.selectedIndex
+            transVal = options[index].value         //변환상수에 선택한 옵션 값 저장
+            calculate() //입력받은 값 * 변환상수 (소수점 둘째자리까지 출력)
+            
+        })
+
+        input.addEventListener('keyup', (e) => {        //키 눌렀다가 땔 때 인식
+            //입력받은 값을 가져와 계산
+            currentVal = parseInt(e.currentTarget.value)      //입력받은 값 정수로 변환
+            calculate()    //입력받은 값 * 변환상수 (소수점 둘째자리까지 출력)
+        })
+    </script>
+   
+</body>
+</html>

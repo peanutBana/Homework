@@ -183,7 +183,7 @@ footer{
     width: 60%;
 }
 .footer__left__list{
-    display: flex;
+    display: inline-block;
     justify-content: space-around;
     padding: 20px;
 }
