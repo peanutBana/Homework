@@ -133,7 +133,8 @@ public class Java_03 {
          //boolean b =  (ch);
          //System.out.println(b);
          
-         //14. 
+         //14. 실행결과 : ch:A / ch to lowerCAse:a
+         //정답 : ('A' <= ch && cg <='Z') ? (char)(ch + 32): ch;
 
 	}
 
