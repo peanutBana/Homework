@@ -1,27 +1,38 @@
 package homework;
-
-import java.util.Scanner;
-
 public class Account2 {
-	public class BankApplication{
-		String[] Account = new String[100];
-		
-	}
+
+	private String acc ;
+	private String name ;
+	private int deposit ;
 	
-
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);	
-		String acc = sc.nextLine();
-		int choice = sc.nextInt() ;
-
-		
-		while(choice == 5) {
-			System.out.println("----------------------");
-			System.out.println("1.계좌생성 | 2.계좌목록 | 3.예금 | 4.출금 | 5.종료");
-			System.out.println("----------------------");
-			System.out.println("선택 > ");
-			
-		}
+	  Account2(String acc, String name ,int deposit ) {
+		this.setAcc(acc); 
+		this.setName(name);
+		this.setDeposit(deposit);
 	}
 
+	public String getAcc() {
+		return acc;
+	}
+
+	public void setAcc(String acc) {
+		this.acc = acc;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getDeposit() {
+		return deposit;
+	}
+
+	public void setDeposit(int deposit) {
+		this.deposit = deposit;
+	}
 }
+
