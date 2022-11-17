@@ -10,7 +10,6 @@ public class BankApplication {
 	static Scanner sc = new Scanner(System.in);
 	static boolean status = true;
 
-	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
 		while(status) {
@@ -40,13 +39,15 @@ public class BankApplication {
 	}
 	
 	
+	
 	static void createAccount(){
 		System.out.println("-------");
 		System.out.println("계좌생성");
 		System.out.println("-------");
-		System.out.print("계좌번호 : "); String acc = sc.nextLine();
-		System.out.print("계좌주 : "); String name = sc.nextLine();
+		System.out.print("계좌번호 : "); String acc = sc.next();
+		System.out.print("계좌주 : "); String name = sc.next();
 		System.out.print("초기입금액 : "); int deposit = sc.nextInt();
+		//sc.nextLine();
 		System.out.println();
 		
 		AccList.add(new Account2(acc, name, deposit));
@@ -58,7 +59,6 @@ public class BankApplication {
 		System.out.println("-------");
 		System.out.println();
 	
-		
 		for(Account2 i : AccList) {
 			System.out.println(i.getAcc() + "  " + i.getName() + "  " + i.getDeposit());
 		}
@@ -68,9 +68,19 @@ public class BankApplication {
 		System.out.println("-------");
 		System.out.println("예금");
 		System.out.println("-------");	
-		System.out.println();
+		System.out.print("계좌번호 : "); String acc = sc.next();
+		System.out.print("예금액 : "); int deposit = sc.nextInt();
+		int idx = 0;
 		
 	};
 	
 	static void withDraw() {};
+	
+	static Account2 findAcc(String Acc) {
+		for(Account2 i : AccList) {
+			if(i.getAcc() == Acc) {
+				return i;
+			}	
+		}
+	}
 }
