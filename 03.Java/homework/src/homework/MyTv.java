@@ -62,9 +62,10 @@ class MyTv {
 //		t.channelUp();
 //		t.volumeUp();
 //		System.out.println("CH:" + t.channel + ", VOL:" + t.volume);
-		String str = "ㄱ1ㄹ12ㄷ23";
-//		for(int i=0 ; i<str.length(); )
-		System.out.println(str.length());
+		String str = "a12wdfs";
+		
+		
+		
 	}
 } // class MyTv
 
