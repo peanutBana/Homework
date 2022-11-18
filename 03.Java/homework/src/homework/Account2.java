@@ -17,6 +17,7 @@ public class Account2 {
 
 	public void setAcc(String acc) {
 		this.acc = acc;
+
 	}
 
 	public String getName() {

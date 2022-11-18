@@ -10,8 +10,8 @@ public class BankApplication {
 	static Scanner sc = new Scanner(System.in);
 	static boolean status = true;
 
-		Scanner sc = new Scanner(System.in);
-
+	
+	public static void main(String[] args) {
 		while(status) {
 			System.out.println("--------------------------------------------");
 			System.out.println("1.계좌생성 | 2.계좌목록 | 3.예금 | 4.출금 | 5.종료");
@@ -37,9 +37,8 @@ public class BankApplication {
 			}
 		}
 	}
-	
-	
-	
+
+
 	static void createAccount(){
 		System.out.println("-------");
 		System.out.println("계좌생성");
@@ -70,7 +69,7 @@ public class BankApplication {
 		System.out.println("-------");	
 		System.out.print("계좌번호 : "); String acc = sc.next();
 		System.out.print("예금액 : "); int deposit = sc.nextInt();
-		int idx = 0;
+		findAcc(acc);
 		
 	};
 	
@@ -79,8 +78,9 @@ public class BankApplication {
 	static Account2 findAcc(String Acc) {
 		for(Account2 i : AccList) {
 			if(i.getAcc() == Acc) {
-				return i;
+				
 			}	
 		}
+		return null;
 	}
 }
