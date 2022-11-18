@@ -46,7 +46,6 @@ public class BankApplication {
 		System.out.print("계좌번호 : "); String acc = sc.next();
 		System.out.print("계좌주 : "); String name = sc.next();
 		System.out.print("초기입금액 : "); int deposit = sc.nextInt();
-		//sc.nextLine();
 		System.out.println();
 		
 		AccList.add(new Account2(acc, name, deposit));
@@ -69,18 +68,31 @@ public class BankApplication {
 		System.out.println("-------");	
 		System.out.print("계좌번호 : "); String acc = sc.next();
 		System.out.print("예금액 : "); int deposit = sc.nextInt();
-		findAcc(acc);
 		
+		Account2 findAccResult = findAcc(acc);
+		int accDeposit = findAccResult.getDeposit();
+		findAccResult.setDeposit(accDeposit + deposit);
 	};
 	
-	static void withDraw() {};
+	static void withDraw() {
+		System.out.println("-------");
+		System.out.println("출금");
+		System.out.println("-------");	
+		System.out.print("계좌번호 : "); String acc = sc.next();
+		System.out.print("출금액 : "); int withdraw = sc.nextInt();
+		
+		Account2 findAccResult = findAcc(acc);
+		int accDeposit = findAccResult.getDeposit();
+		findAccResult.setDeposit(accDeposit - withdraw);
+	};
 	
-	static Account2 findAcc(String Acc) {
-		for(Account2 i : AccList) {
-			if(i.getAcc() == Acc) {
-				
-			}	
+	static Account2 findAcc(String acc) {
+		Account2 findAcc = null;
+		for(Account2 i : AccList){
+			if(i.getAcc().equals(acc)) {
+				findAcc = i;
+			}		
 		}
-		return null;
+		return findAcc;
 	}
 }
