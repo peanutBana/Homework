@@ -1,4 +1,4 @@
-package homework;
+package Java_06;
 public class Account2 {
 
 	private String acc ;

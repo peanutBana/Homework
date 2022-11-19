@@ -1,4 +1,4 @@
-package homework;
+package Java_06;
 //15
 public class MemberService {
 	

@@ -1,4 +1,4 @@
-package homework;
+package Java_06;
 import java.util.Scanner;
 
 public class Account {

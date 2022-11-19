@@ -1,4 +1,4 @@
-package homework;
+package Java_06;
 
 public class Java_06 {
 	public static void main(String[] args) {

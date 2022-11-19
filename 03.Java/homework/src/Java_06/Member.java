@@ -1,4 +1,4 @@
-package homework;
+package Java_06;
 
 public class Member {
 	//1
