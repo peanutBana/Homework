@@ -1,5 +1,6 @@
 package Java_08;
 
+
 public class MySqlDao implements DataAccessObject{
 
 	@Override
